@@ -1,0 +1,9 @@
+res://
+├── Player/
+│   ├── Player.tscn
+│   └── Player.gd
+├── Enemies/
+├── Weapons/
+├── Levels/
+├── Materials/
+└── Main.tscn
