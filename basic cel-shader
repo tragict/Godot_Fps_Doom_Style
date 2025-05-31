@@ -1,0 +1,12 @@
+shader_type spatial;
+
+void fragment() {
+    vec3 light = vec3(0.0, 1.0, 0.8);
+    float brightness = dot(NORMAL, light);
+    if (brightness > 0.95)
+        ALBEDO = vec3(1.0, 1.0, 1.0);
+    else if (brightness > 0.5)
+        ALBEDO = vec3(0.8, 0.8, 0.8);
+    else
+        ALBEDO = vec3(0.5, 0.5, 0.5);
+}
